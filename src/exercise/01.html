@@ -1,13 +1,12 @@
 <!-- Basic JavaScript-rendered Hello World -->
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 <body>
-  <div id="root">
   <script type="module">
-    const rootElement = document.getElementById("root")
+    const rootElement = document.createElement("div")
     const divElement = document.createElement("div")
     divElement.textContent = "Hello World"
     divElement.className = "container"
     rootElement.append(divElement)
+    document.body.append(rootElement)
   </script>
-  </div>
 </body>
